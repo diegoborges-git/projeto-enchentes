@@ -1,0 +1,69 @@
+{
+  "estatisticas_gerais": {
+    "pessoas_potencialmente_afetadas": 2398255,
+    "pessoas_diretamente_afetadas": 876565,
+    "desalojados": 581638,
+    "pessoas_em_abrigos": 81170,
+    "pessoas_resgatadas": 77712,
+    "feridos": 806,
+    "obitos_confirmados": 183,
+    "desaparecidos": 27
+  },
+  "perfil_vulneraveis": {
+    "genero": {
+      "feminino_pct": 57.1,
+      "masculino_pct": 42.9
+    },
+    "raca_cor": {
+      "branca_pct": 77.7,
+      "parda_pct": 12.8,
+      "preta_pct": 9.1,
+      "indigena_pct": 0.1
+    },
+    "grupos_especificos": {
+      "criancas_adolescentes_abrigos": 15341,
+      "criancas_0_a_5_anos_abrigos": 3930,
+      "idosos_abrigos": 7457,
+      "idosos_obitos": 55,
+      "pNE_abrigos": 2042,
+      "indigenas_afetados": 16691,
+      "quilombolas_afetados": 15445,
+      "pescadores_artesanais_familias": 977
+    }
+  },
+  "regionais_redec": {
+    "REDEC 1": { "municipios_com_abrigos": 14, "abrigos": 240, "pessoas_acolhidas": 38450 },
+    "REDEC 2": { "municipios_com_abrigos": 12, "abrigos": 185, "pessoas_acolhidas": 18210 },
+    "REDEC 3": { "municipios_com_abrigos": 18, "abrigos": 152, "pessoas_acolhidas": 8940 },
+    "REDEC 4": { "municipios_com_abrigos": 8, "abrigos": 98, "pessoas_acolhidas": 6530 },
+    "REDEC 5": { "municipios_com_abrigos": 15, "abrigos": 84, "pessoas_acolhidas": 3820 },
+    "REDEC 6": { "municipios_com_abrigos": 12, "abrigos": 68, "pessoas_acolhidas": 2110 },
+    "Outras": { "municipios_com_abrigos": 38, "abrigos": 153, "pessoas_acolhidas": 3110 }
+  },
+  "municipios": {
+    "Canoas": { "region": "Vale do Rio dos Sinos", "redec": "REDEC 2", "affected_population": 160677, "affected_percentage": 46.2, "deaths": 31, "missing": 2, "rescued": 19450, "displaced": 160677 },
+    "Porto Alegre": { "region": "Metropolitano Delta do Jacuí", "redec": "REDEC 1", "affected_population": 152258, "affected_percentage": 11.4, "deaths": 5, "missing": 1, "rescued": 18300, "displaced": 152258 },
+    "São Leopoldo": { "region": "Vale do Rio dos Sinos", "redec": "REDEC 2", "affected_population": 93729, "affected_percentage": 43.1, "deaths": 9, "missing": 1, "rescued": 14200, "displaced": 93729 },
+    "Rio Grande": { "region": "Sul", "redec": "REDEC 4", "affected_population": 43800, "affected_percentage": 22.8, "deaths": 0, "missing": 0, "rescued": 4200, "displaced": 43800 },
+    "Pelotas": { "region": "Sul", "redec": "REDEC 4", "affected_population": 43750, "affected_percentage": 13.4, "deaths": 0, "missing": 0, "rescued": 3900, "displaced": 43750 },
+    "Eldorado do Sul": { "region": "Metropolitano Delta do Jacuí", "redec": "REDEC 1", "affected_population": 32115, "affected_percentage": 81.2, "deaths": 6, "missing": 0, "rescued": 8900, "displaced": 32115 },
+    "Novo Hamburgo": { "region": "Vale do Rio dos Sinos", "redec": "REDEC 2", "affected_population": 29100, "affected_percentage": 12.8, "deaths": 1, "missing": 0, "rescued": null, "displaced": 29100 },
+    "Guaíba": { "region": "Metropolitano Delta do Jacuí", "redec": "REDEC 1", "affected_population": 26693, "affected_percentage": 28.7, "deaths": 1, "missing": 0, "rescued": null, "displaced": 26693 },
+    "Alvorada": { "region": "Metropolitano Delta do Jacuí", "redec": "REDEC 1", "affected_population": 21077, "affected_percentage": 11.3, "deaths": 1, "missing": 0, "rescued": null, "displaced": 21077 },
+    "Estrela": { "region": "Vale do Taquari", "redec": "REDEC 3", "affected_population": 17655, "affected_percentage": 54.9, "deaths": 2, "missing": 1, "rescued": 2400, "displaced": 17655 },
+    "Igrejinha": { "region": "Paranhana Encosta da Serra", "redec": "REDEC 2", "affected_population": 16682, "affected_percentage": 50.8, "deaths": 0, "missing": 0, "rescued": 2800, "displaced": 16682 },
+    "Lajeado": { "region": "Vale do Taquari", "redec": "REDEC 3", "affected_population": 12550, "affected_percentage": 13.4, "deaths": 2, "missing": 3, "rescued": 3100, "displaced": 12550 },
+    "Cachoeirinha": { "region": "Metropolitano Delta do Jacuí", "redec": "REDEC 1", "affected_population": 12244, "affected_percentage": 9.0, "deaths": 1, "missing": 0, "rescued": null, "displaced": 12244 },
+    "Triunfo": { "region": "Metropolitano Delta do Jacuí", "redec": "REDEC 1", "affected_population": 11881, "affected_percentage": 43.2, "deaths": 0, "missing": 0, "rescued": null, "displaced": 11881 },
+    "Esteio": { "region": "Vale do Rio dos Sinos", "redec": "REDEC 2", "affected_population": 11466, "affected_percentage": 15.1, "deaths": 0, "missing": 0, "rescued": null, "displaced": 11466 },
+    "Roca Sales": { "region": "Vale do Taquari", "redec": "REDEC 3", "affected_population": null, "affected_percentage": null, "deaths": 14, "missing": 2, "rescued": 2100, "displaced": 4800 },
+    "Cruzeiro do Sul": { "region": "Vale do Taquari", "redec": "REDEC 3", "affected_population": null, "affected_percentage": null, "deaths": 13, "missing": 5, "rescued": 1850, "displaced": 3900 },
+    "Bento Gonçalves": { "region": "Serra", "redec": "REDEC 5", "affected_population": null, "affected_percentage": null, "deaths": 11, "missing": 4, "rescued": 920, "displaced": 2450 },
+    "Caxias do Sul": { "region": "Serra", "redec": "REDEC 5", "affected_population": null, "affected_percentage": null, "deaths": 9, "missing": 1, "rescued": 850, "displaced": 1800 },
+    "Gramado": { "region": "Serra", "redec": "REDEC 5", "affected_population": null, "affected_percentage": null, "deaths": 7, "missing": 0, "rescued": 320, "displaced": 950 },
+    "Veranópolis": { "region": "Serra", "redec": "REDEC 5", "affected_population": null, "affected_percentage": null, "deaths": 5, "missing": 0, "rescued": 140, "displaced": 420 },
+    "Três Coroas": { "region": "Paranhana Encosta da Serra", "redec": "REDEC 2", "affected_population": null, "affected_percentage": null, "deaths": 4, "missing": 0, "rescued": 1100, "displaced": 6800 },
+    "Santa Maria": { "region": "Central", "redec": "REDEC 6", "affected_population": null, "affected_percentage": null, "deaths": 4, "missing": 0, "rescued": 1450, "displaced": 5200 },
+    "Muçum": { "region": "Vale do Taquari", "redec": "REDEC 3", "affected_population": null, "affected_percentage": null, "deaths": 3, "missing": 1, "rescued": 680, "displaced": 2100 }
+  }
+}
