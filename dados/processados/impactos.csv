@@ -1,0 +1,1601 @@
+{
+  "_meta": {
+    "quadro_001": {
+      "titulo": "Efeitos Totai S, Em Milhares De Reais",
+      "subtitulo": null,
+      "paginas_pdf": "21",
+      "chave_nivel_2": "Categoria",
+      "unidades": {
+        "publico": "milhares de R$",
+        "privado": "milhares de R$",
+        "total": "milhares de R$"
+      }
+    },
+    "quadro_002": {
+      "titulo": "Efeitos Do Desastre Por Setor, Em Milhares De Reais",
+      "subtitulo": null,
+      "paginas_pdf": "21",
+      "chave_nivel_2": "Categoria",
+      "unidades": {
+        "danos": "milhares de R$",
+        "perdas": "milhares de R$",
+        "custos_adicionais": "milhares de R$"
+      }
+    },
+    "quadro_003": {
+      "titulo": "Efeitos Do Desastre Por Setor, Em Milhares De Reais",
+      "subtitulo": null,
+      "paginas_pdf": "22",
+      "chave_nivel_2": "Categoria",
+      "unidades": {
+        "danos": "milhares de R$",
+        "perdas": "milhares de R$",
+        "custos_adicionais": "milhares de R$"
+      }
+    },
+    "quadro_004": {
+      "titulo": "Eventos De Desastres Notáveis No Rio Grande Do Sul",
+      "subtitulo": null,
+      "paginas_pdf": "34-35",
+      "chave_nivel_2": "Ano",
+      "unidades": {}
+    },
+    "quadro_005": {
+      "titulo": "Descrição Cronológica Das Condições Climáticas E Precipitações Extraordinárias Em Abril – Maio De 2024",
+      "subtitulo": null,
+      "paginas_pdf": "38-39",
+      "chave_nivel_2": "Data",
+      "unidades": {}
+    },
+    "quadro_006": {
+      "titulo": "Descrição Cronológica Das Condições Hidrológicas Do Rio Grande Do Sul",
+      "subtitulo": null,
+      "paginas_pdf": "42-43",
+      "chave_nivel_2": "Data",
+      "unidades": {}
+    },
+    "quadro_007": {
+      "titulo": "Dispositivos Legais Utilizados Pelos Governos Federal E Estadual Durante A Emergência",
+      "subtitulo": "Decretos emitidos pelo governo do Rio Grande do Sul",
+      "paginas_pdf": "46-47",
+      "chave_nivel_2": "Decreto",
+      "unidades": {}
+    },
+    "quadro_008": {
+      "titulo": "População Afetada Primária",
+      "subtitulo": null,
+      "paginas_pdf": "56",
+      "chave_nivel_2": "Como foi afetada",
+      "unidades": {
+        "numero_de_pessoas": "pessoas"
+      }
+    },
+    "quadro_009": {
+      "titulo": "Municípios Mais Afetados, Classificados Por Conselhos Regionais De Desenvolvimento (Coredes)",
+      "subtitulo": null,
+      "paginas_pdf": "67",
+      "chave_nivel_2": "Município",
+      "unidades": {
+        "affected_population": "pessoas",
+        "percentage": "% da população total do município"
+      }
+    },
+    "quadro_010": {
+      "titulo": "Número Cumulativo De Óbitos Por Município",
+      "subtitulo": null,
+      "paginas_pdf": "68",
+      "chave_nivel_2": "Município",
+      "unidades": {
+        "obitos": "pessoas (óbitos)"
+      }
+    },
+    "quadro_011": {
+      "titulo": "Desaparecidos Por Município",
+      "subtitulo": null,
+      "paginas_pdf": "68",
+      "chave_nivel_2": "Município",
+      "unidades": {
+        "desaparecidos": "pessoas"
+      }
+    },
+    "quadro_012": {
+      "titulo": "Caracterização Dos Abrigos",
+      "subtitulo": null,
+      "paginas_pdf": "69",
+      "chave_nivel_2": "Descrição",
+      "unidades": {
+        "total": "depende da linha, ver campo \"unidade\""
+      }
+    },
+    "quadro_013": {
+      "titulo": "Identificação De Responsabilidades Da Gestão Dos Abrigos",
+      "subtitulo": null,
+      "paginas_pdf": "70",
+      "chave_nivel_2": "Responsabilidade da gestão do abrigo",
+      "unidades": {
+        "total_de_abrigos": "nº de abrigos"
+      }
+    },
+    "quadro_014": {
+      "titulo": "Número De Famílias De Pescadores Afetadas E Danos Registrados",
+      "subtitulo": null,
+      "paginas_pdf": "74",
+      "chave_nivel_2": "Famílias de pescadores desalojadas",
+      "unidades": {
+        "familias_de_pescadores_desalojadas": "nº de famílias",
+        "familias_com_danos_materiais_s_desalojamento": "nº de famílias",
+        "equipamentos_de_pesca_danificados": "nº de equipamentos"
+      }
+    },
+    "quadro_015a": {
+      "titulo": "Custo Estimado Para A Atenção E Resposta À Emergência",
+      "subtitulo": null,
+      "paginas_pdf": "76",
+      "chave_nivel_2": "Custos estimados para resposta a emergências",
+      "unidades": {
+        "total_em_milhares_de_r": "milhares de R$"
+      }
+    },
+    "quadro_015b": {
+      "titulo": "Custos Operativos De Resgate",
+      "subtitulo": "Custos operativos de resgate",
+      "paginas_pdf": "77",
+      "chave_nivel_2": "Categoria",
+      "unidades": {
+        "quantidade": "ver campo \"unidade\" (Hr = horas; Unidade/30 dias)",
+        "custo_unitario": "R$ por unidade",
+        "total_em_milhares_r": "milhares de R$"
+      }
+    },
+    "quadro_015c": {
+      "titulo": "Repasses Aos Municípios E Apoio Em Espécie",
+      "subtitulo": "Repasses aos municípios",
+      "paginas_pdf": "78",
+      "chave_nivel_2": "Categoria",
+      "unidades": {
+        "planos_aprovados": "nº de planos (na linha das cestas básicas, 112 = municípios atendidos)",
+        "total_em_milhares_r": "milhares de R$"
+      }
+    },
+    "quadro_015d": {
+      "titulo": "Doações Internacionais",
+      "subtitulo": null,
+      "paginas_pdf": "78",
+      "chave_nivel_2": "Fonte",
+      "unidades": {
+        "quantidade": "nº de itens",
+        "total_em_milhares_r": "milhares de R$ (convertido de USD)"
+      }
+    },
+    "quadro_015e": {
+      "titulo": "Custo Estimado Para A Atenção E Resposta À Emergência",
+      "subtitulo": null,
+      "paginas_pdf": "79",
+      "chave_nivel_2": "Nome do programa",
+      "unidades": {
+        "valor_da_transferencia_em_r": "R$ por família (texto em alguns casos)",
+        "familias_usuarias": "nº de famílias",
+        "total_da_transferencia_em_milhares_r": "milhares de R$"
+      }
+    },
+    "quadro_016": {
+      "titulo": "Resumo Dos Efeitos No Setor Da Educação, Em Milhares De Reais",
+      "subtitulo": null,
+      "paginas_pdf": "82",
+      "chave_nivel_2": "Efeitos",
+      "unidades": {
+        "publico": "milhares de R$",
+        "privado": "milhares de R$",
+        "total": "milhares de R$"
+      }
+    },
+    "quadro_017": {
+      "titulo": "Unidades Educacionais Das Redes De Educação Básica",
+      "subtitulo": null,
+      "paginas_pdf": "84",
+      "chave_nivel_2": "Rede de educação",
+      "unidades": {
+        "no_de_estabelecimentos_educativos": "nº de estabelecimentos",
+        "urbano": "nº de estabelecimentos",
+        "rural": "nº de estabelecimentos"
+      }
+    },
+    "quadro_018": {
+      "titulo": "Entidades De Educação Superior Por Organização Acadêmica",
+      "subtitulo": null,
+      "paginas_pdf": "84",
+      "chave_nivel_2": "Organização acadêmica",
+      "unidades": {
+        "no_de_estabelecimentos_educativos": "nº de estabelecimentos",
+        "publico": "nº de estabelecimentos",
+        "privado": "nº de estabelecimentos"
+      }
+    },
+    "quadro_019": {
+      "titulo": "Tipo De Dano Em Uma Escala De 1 A 5",
+      "subtitulo": null,
+      "paginas_pdf": "85",
+      "chave_nivel_2": "Tipo de dano",
+      "unidades": {}
+    },
+    "quadro_020": {
+      "titulo": "Estabelecimentos Educacionais Segundo O Tipo De Danos Das Redes De Educação Básica",
+      "subtitulo": null,
+      "paginas_pdf": "89",
+      "chave_nivel_2": "Rede de ensino",
+      "unidades": {
+        "tipo_3_danos_simples": "nº de estabelecimentos",
+        "tipo_4_danificados": "nº de estabelecimentos",
+        "tipo_5_inoperantes": "nº de estabelecimentos",
+        "total": "nº de estabelecimentos"
+      }
+    },
+    "quadro_021": {
+      "titulo": "Estabelecimentos De Educação Superior Segundo Tipo De Danos",
+      "subtitulo": null,
+      "paginas_pdf": "89",
+      "chave_nivel_2": "Categoria",
+      "unidades": {
+        "tipo_3_danos_simples": "nº de estabelecimentos",
+        "tipo_4_danos_significativos": "nº de estabelecimentos",
+        "total": "nº de estabelecimentos"
+      }
+    },
+    "quadro_022": {
+      "titulo": "Danos No Setor Da Educação, Em Milhares De Reais",
+      "subtitulo": "Educação básica",
+      "paginas_pdf": "90",
+      "chave_nivel_2": "Categorias",
+      "unidades": {
+        "publico": "milhares de R$",
+        "privado": "milhares de R$",
+        "total": "milhares de R$"
+      }
+    },
+    "quadro_023": {
+      "titulo": "Resumo Dos Danos No Setor Da Educação Dos Municípios Mais Afetados",
+      "subtitulo": null,
+      "paginas_pdf": "90",
+      "chave_nivel_2": "Município",
+      "unidades": {
+        "educacao_basica": "milhares de R$",
+        "educacao_superior": "milhares de R$",
+        "danos_totais": "milhares de R$",
+        "percentual_do_total": "% do total de danos da educação (inferido)"
+      }
+    },
+    "quadro_024": {
+      "titulo": "Horas-Aula Perdidas, Em Milhares De Horas",
+      "subtitulo": null,
+      "paginas_pdf": "93",
+      "chave_nivel_2": "Nível de ensino",
+      "unidades": {
+        "horas_aula_perdidas": "milhares de horas-aula"
+      }
+    },
+    "quadro_025": {
+      "titulo": "Perdas No Setor Da Educação, Em Milhares De Reais",
+      "subtitulo": "Educação básica",
+      "paginas_pdf": "94",
+      "chave_nivel_2": "Categorias",
+      "unidades": {
+        "publico": "milhares de R$",
+        "privado": "milhares de R$",
+        "total": "milhares de R$"
+      }
+    }
+  },
+  "quadro_001": {
+    "Danos": {
+      "publico": 5172824,
+      "privado": 36115553,
+      "total": 41288377
+    },
+    "Perdas": {
+      "publico": 2616530,
+      "privado": 31490161,
+      "total": 34106691
+    },
+    "Custos adicionais": {
+      "publico": 12005061,
+      "privado": 1476507,
+      "total": 13481567
+    },
+    "Total": {
+      "publico": 19794415,
+      "privado": 69082220,
+      "total": 88876634
+    }
+  },
+  "quadro_002": {
+    "Infraestrutura": {
+      "danos": 11605088,
+      "perdas": 1033007,
+      "custos_adicionais": 6405756
+    },
+    "Social": {
+      "danos": 4449312,
+      "perdas": 1013196,
+      "custos_adicionais": 1538109
+    },
+    "Produtivo": {
+      "danos": 25222141,
+      "perdas": 30474606,
+      "custos_adicionais": 5537702
+    },
+    "Meio ambiente": {
+      "danos": 11836,
+      "perdas": 1585882,
+      "custos_adicionais": null
+    }
+  },
+  "quadro_003": {
+    "Social": {
+      "danos": 11605088,
+      "perdas": 1033007,
+      "custos_adicionais": 6405756
+    },
+    "Educação": {
+      "danos": 2466408,
+      "perdas": 475966,
+      "custos_adicionais": 106958
+    },
+    "Saúde": {
+      "danos": 999115,
+      "perdas": 336337,
+      "custos_adicionais": 194650
+    },
+    "Cultura e bens culturais": {
+      "danos": 148710,
+      "perdas": 48122,
+      "custos_adicionais": 23132
+    },
+    "Habitação": {
+      "danos": 7990855,
+      "perdas": 172582,
+      "custos_adicionais": 809047
+    },
+    "População afetada": {
+      "danos": null,
+      "perdas": null,
+      "custos_adicionais": 5271969
+    },
+    "Infraestrutura": {
+      "danos": 4449312,
+      "perdas": 1013196,
+      "custos_adicionais": 1538109
+    },
+    "Água potável e saneamento": {
+      "danos": 439852,
+      "perdas": 306827,
+      "custos_adicionais": 276327
+    },
+    "Transportes": {
+      "danos": 2967764,
+      "perdas": 378088,
+      "custos_adicionais": 763894
+    },
+    "Setor elétrico": {
+      "danos": 1041696,
+      "perdas": 328281,
+      "custos_adicionais": 497887
+    },
+    "Produtivo": {
+      "danos": 25222141,
+      "perdas": 30474606,
+      "custos_adicionais": 5537702
+    },
+    "Agricultura": {
+      "danos": 498573,
+      "perdas": 8579014,
+      "custos_adicionais": 3650223
+    },
+    "Alojamento e restaurantes": {
+      "danos": 1917397,
+      "perdas": 4753889,
+      "custos_adicionais": 88200
+    },
+    "Comércio": {
+      "danos": 14839651,
+      "perdas": 9504508,
+      "custos_adicionais": 682624
+    },
+    "Pecuária": {
+      "danos": 709573,
+      "perdas": 1191017,
+      "custos_adicionais": 782835
+    },
+    "Indústria": {
+      "danos": 7256947,
+      "perdas": 6446177,
+      "custos_adicionais": 333820
+    },
+    "Meio ambiente": {
+      "danos": 11836,
+      "perdas": 1585882,
+      "custos_adicionais": null
+    },
+    "Total": {
+      "danos": 41288377,
+      "perdas": 34106691,
+      "custos_adicionais": 13481567
+    }
+  },
+  "quadro_004": {
+    "1941": {
+      "tipo_de_desastre": "Inundações",
+      "descricao_do_evento": "Transbordamento do Rio Guaíba e afluentes",
+      "impacto": "Inundações generalizadas em Porto Alegre."
+    },
+    "1966": {
+      "tipo_de_desastre": "Inundações",
+      "descricao_do_evento": "Vários municípios afetados",
+      "impacto": "Danos extensos à infraestrutura"
+    },
+    "2005-2006": {
+      "tipo_de_desastre": "Seca",
+      "descricao_do_evento": "Um dos piores da história do estado",
+      "impacto": "Impacto severo no rendimento das colheitas e nos reservatórios de água"
+    },
+    "2008": {
+      "tipo_de_desastre": "Deslizamentos de terra",
+      "descricao_do_evento": "Região da Serra Gaúcha",
+      "impacto": "Mortes e danos materiais significativos"
+    },
+    "2010": {
+      "tipo_de_desastre": "Tornado",
+      "descricao_do_evento": "São Luiz Gonzaga",
+      "impacto": "Danos extensos a residências, empresas e infraestrutura"
+    },
+    "2011": {
+      "tipo_de_desastre": "Inundações",
+      "descricao_do_evento": "Vale dos Sinos",
+      "impacto": "Mais de 60.000 pessoas afetadas"
+    },
+    "2019": {
+      "tipo_de_desastre": "Incidente com barragem",
+      "descricao_do_evento": "Quarta Barragem Colônia",
+      "impacto": "Questões estruturais, aviso de possível colapso"
+    },
+    "2019-2020": {
+      "tipo_de_desastre": "Seca",
+      "descricao_do_evento": "Em todo o estado",
+      "impacto": "Racionamento de água, dificuldades econômicas e sociais"
+    },
+    "2020": {
+      "tipo_de_desastre": "Incêndios florestais",
+      "descricao_do_evento": "Várias localidades",
+      "impacto": "Danos a áreas florestais e terras agrícolas"
+    },
+    "2021-2023": {
+      "tipo_de_desastre": "Seca",
+      "descricao_do_evento": "Em todo o estado",
+      "impacto": "Escassez significativa de água e perdas agrícolas"
+    },
+    "2021": {
+      "tipo_de_desastre": "Evento gelado",
+      "descricao_do_evento": "Em todo o estado",
+      "impacto": "Danos graves às culturas, especialmente vinhas e pomares"
+    },
+    "2022": {
+      "tipo_de_desastre": "Inundações",
+      "descricao_do_evento": "Vários municípios",
+      "impacto": "Danos extensos, milhares de deslocados"
+    },
+    "2022 (2)": {
+      "tipo_de_desastre": "Incêndios florestais",
+      "descricao_do_evento": "Áreas rurais",
+      "impacto": "Destruição de florestas e terras agrícolas"
+    },
+    "2022 (3)": {
+      "tipo_de_desastre": "Tempestades de vento",
+      "descricao_do_evento": "Santa Maria e Pelotas",
+      "impacto": "Quedas de energia e perdas econômicas"
+    },
+    "2023": {
+      "tipo_de_desastre": "Deslizamentos de terra",
+      "descricao_do_evento": "Gramado e Canela",
+      "impacto": "Mortes e danos extensos à infraestrutura"
+    },
+    "2023 (2)": {
+      "tipo_de_desastre": "Erosão costeira",
+      "descricao_do_evento": "Torres e Tramandaí",
+      "impacto": "Danos a propriedades e infraestruturas costeiras"
+    },
+    "2023 (3)": {
+      "tipo_de_desastre": "Inundações",
+      "descricao_do_evento": "Vale do Taquari, bem como em outros afluentes do Rio Guaíba e até se estendendo à Região Metropolitana de Porto Alegre (RMPA)",
+      "impacto": "Causou perturbações substanciais, danos à infraestrutura e perdas econômicas"
+    }
+  },
+  "quadro_005": {
+    "1 a 10 de abril de 2024: Chuvas iniciais": {
+      "descricao_cronologica": "O mês começou com uma série de chuvas leves a moderadas em todo o Rio Grande do Sul. Os padrões climáticos indicavam a aproximação de um sistema de baixas pressões vindas do Sul, o que trouxe aumento de umidade e precipitação. A precipitação durante este período foi consistente, mas ainda não alarmante, com médias diárias de precipitação variando entre 20 e 50 mm."
+    },
+    "11 a 15 de abril de 2024: Intensificação das chuvas": {
+      "descricao_cronologica": "Em meados de abril, o sistema de baixa pressão intensificou-se, provocando fortes chuvas que atingiram a região. Várias áreas relataram precipitação diária superior a 100 mm. As redes hidrológicas do estado começaram a apresentar sinais de estresse, com rios e reservatórios aproximando-se de níveis críticos."
+    },
+    "16 a 20 de abril de 2024: Chuvas fortes persistentes": {
+      "descricao_cronologica": "As fortes chuvas persistiram, agravadas por um sistema frontal paralisado na região. Chuvas contínuas resultaram em quantidades cumulativas de precipitação que atingiram 300-400 mm em vários locais. Alertas de enchentes foram emitidos para vários municípios à medida que os níveis dos rios continuavam a subir perigosamente."
+    },
+    "21 a 25 de abril de 2024: Pico do evento de inundação": {
+      "descricao_cronologica": "O pico do evento de inundação ocorreu neste período. As chuvas torrenciais, por vezes atingindo até 150 mm por dia, sobrecarregaram a capacidade de drenagem da região. Os principais rios, incluindo o Jacuí e o Taquari, transbordaram, inundando áreas adjacentes. As comunidades urbanas e rurais sofreram graves inundações, levando a um deslocamento significativo de residentes."
+    },
+    "26 a 30 de abril de 2024: Chuvas fortes contínuas e esforços de resposta inicial": {
+      "descricao_cronologica": "Embora tenha havido uma ligeira diminuição na intensidade das chuvas, a região ainda registrou precipitações significativas, com médias diárias em torno de 50-80 mm. Os esforços de resposta a emergências foram intensificados, com agências locais, estaduais e federais coordenando as operações de resgate e socorro. As ordens de evacuação foram expandidas para mais áreas afetadas pela subida das águas."
+    },
+    "1 a 10 de maio de 2024: Chuvas fortes esporádicas e desafios de recuperação": {
+      "descricao_cronologica": "O início de maio assistiu a fortes aguaceiros esporádicos, complicando os esforços de recuperação. A precipitação diária variou de 20 a 60 mm, com áreas isoladas recebendo chuvas mais intensas. Segundo o Instituto Nacional de Meteorologia (INMET), até o dia 5 de maio, eram esperados ventos fortes com rajadas superiores a 60 km por hora, raios, possíveis tempestades de granizo e chuvas intensas que poderiam ultrapassar 100 mm entre o norte do estado do Rio Grande do Sul e sul de Santa Catarina. As águas das cheias em muitas áreas começaram a diminuir, mas o solo saturado e os elevados níveis dos rios continuaram a representar riscos de novas inundações."
+    },
+    "11 a 20 de maio de 2024: Transição para a normalidade": {
+      "descricao_cronologica": "Em meados de maio, as condições meteorológicas começaram a estabilizar. As chuvas diminuíram significativamente, permitindo que as águas das enchentes recuassem ainda mais. O foco mudou para a avaliação dos danos e o início de esforços de recuperação e reabilitação em longo prazo."
+    },
+    "21 a 31 de maio de 2024: Recuperação e Reabilitação": {
+      "descricao_cronologica": "Em meados de maio, as condições meteorológicas começaram a estabilizar. As chuvas diminuíram significativamente, permitindo que as águas das enchentes recuassem ainda mais. O foco mudou para a avaliação dos danos e o início de esforços de recuperação e reabilitação em longo prazo."
+    },
+    "Junho de 2024: Conclusão do Evento de Inundação": {
+      "descricao_cronologica": "No início de junho, as condições climáticas haviam voltado ao normal. A região experimentou um clima sazonal típico, sem eventos de precipitação significativos. A maior parte das águas das cheias baixou em meados de junho, marcando o fim da fase aguda da catástrofe das cheias. Os esforços contínuos centraram-se na recuperação, com ênfase na reconstrução de infraestruturas, na restauração dos meios de subsistência e na implementação de medidas para mitigar futuros riscos de inundações."
+    }
+  },
+  "quadro_006": {
+    "1 a 10 de abril de 2024: Aumento dos níveis da água": {
+      "descricao_cronologica": "Como as primeiras chuvas ligeiras a moderadas começaram no início de abril, os solos já saturados contribuíram rapidamente para o escoamento superficial. Esse escoamento começou a elevar o nível dos rios, especialmente nas bacias hidrográficas dos rios Jacuí e Taquari. Os sistemas de monitoramento hidrológico indicaram um aumento constante dos níveis de água, mas nesta fase não foram comunicadas ameaças imediatas de inundações."
+    },
+    "11 a 15 de abril de 2024: Aumento do escoamento e do inchaço do rio": {
+      "descricao_cronologica": "A intensificação das chuvas em meados de abril levou a aumentos significativos no escoamento superficial. Os rios começaram a transbordar e afluentes menores começaram a transbordar. O rio Taquari, em particular, sofreu um rápido aumento nos níveis das águas, aproximando-se dos limites de alerta para inundações. A combinação de chuvas sustentadas e elevado teor de uumidade do solo contribuiu para este rápido aumento."
+    },
+    "16 a 20 de abril de 2024: Atingindo níveis críticos": {
+      "descricao_cronologica": "As fortes chuvas persistentes resultaram em escoamento contínuo para os sistemas fluviais. Os rios Jacuí e Taquari ultrapassaram os níveis de cheia, causando preocupação generalizada entre as autoridades e comunidades locais. Os modelos hidrológicos previram que, se as chuvas continuassem com esta intensidade, grandes inundações seriam inevitáveis. Os reservatórios do estado, já perto da capacidade máxima, tiveram de libertar água para gerir o influxo, contribuindo ainda mais para os riscos de inundações a jusante."
+    },
+    "21 a 25 de abril de 2024: Pico de enchentes": {
+      "descricao_cronologica": "O pico do evento de inundação coincidiu com as chuvas mais fortes. Os rios Jacuí e Taquari atingiram níveis recordes, inundando áreas vizinhas. As áreas urbanas próximas destes rios sofreram graves inundações, com os níveis das águas subindo vários metros acima do normal. O transbordamento destes rios foi exacerbado pelos efeitos de remanso nos afluentes e pela má drenagem nas áreas urbanas baixas."
+    },
+    "26 a 30 de abril de 2024: Níveis elevados contínuos de água e esforços de resposta": {
+      "descricao_cronologica": "Embora a intensidade das chuvas tenha diminuído ligeiramente, os níveis de água nos rios permaneceram criticamente elevados. Os contínuos níveis elevados das águas atrasaram a recessão das águas das cheias. As equipes de resposta a emergências concentraram- -se no reforço de barreiras menores e na construção de barreiras temporárias para proteger infraestruturas críticas e áreas residenciais. Os esforços coordenados visaram a mitigar danos adicionais à medida que os níveis dos rios se estabilizavam gradualmente."
+    },
+    "1 a 10 de maio de 2024: Recessão gradual": {
+      "descricao_cronologica": "Com as fortes chuvas esporádicas no início de maio, os níveis dos rios começaram a diminuir lentamente. No entanto, o solo saturado e os níveis elevados dos rios continuaram a representar riscos de inundações localizadas. Com as fortes chuvas esporádicas no início de maio, os níveis dos rios começaram a diminuir lentamente. No entanto, o solo saturado e os níveis elevados dos rios continuaram a representar riscos de inundações localizadas."
+    },
+    "11 a 31 de maio de 2024: Retorno à normalidade": {
+      "descricao_cronologica": "Em meados de maio, os níveis dos rios diminuíram significativamente e as condições hidrológicas começaram a normalizar. O risco de novas inundações diminuiu e o foco mudou para a recuperação e reabilitação. O monitoramento contínuo garantiu que qualquer aumento inesperado nos níveis da água fosse prontamente resolvido. A resposta hidrológica enfatizou a necessidade de medidas de longo prazo para aumentar a resiliência às cheias na região."
+    }
+  },
+  "quadro_007": {
+    "57.596": {
+      "data": "1º de maio de 2024",
+      "resumo": "Declara estado de calamidade pública no Estado do Rio Grande do Sul devido às intensas chuvas e eventos climáticos relacionados ocorridos de 24 de abril a 1º de maio de 2024. O decreto determina o apoio de entidades da administração pública estadual em coordenação com a Coordenadoria Estadual de Defesa Civil."
+    },
+    "57.600": {
+      "data": "4 de maio de 2024",
+      "resumo": "Reitera o estado de calamidade pública no Rio Grande do Sul devido à continuidade das chuvas intensas em maio de 2024. Amplia o período de calamidade e especifica os municípios afetados. O decreto destaca os danos contínuos às infraestruturas e as perdas humanas e econômicas significativas."
+    },
+    "57.601": {
+      "data": "4 de maio de 2024",
+      "resumo": "Institui um Comitê Gestor para definir ações, medidas e critérios de distribuição de doações às vítimas da calamidade pública causada por chuvas intensas a partir de 24 de abril de 2024. O comitê é composto por representantes de diversas secretarias estaduais e organizações da sociedade civil."
+    },
+    "57.603": {
+      "data": "5 de maio de 2024",
+      "resumo": "Altera o Decreto 57.600, reiterando o estado de calamidade pública e atualizando a lista dos municípios atingidos. Este ajustamento reflete a natureza evolutiva da catástrofe e o seu impacto nas diferentes regiões."
+    },
+    "57.606": {
+      "data": "9 de maio de 2024",
+      "resumo": "Emenda Decreto 57.601 para incluir adicionais entidades como o Tribunal de Contas do Estado (TCE), a Federação dos Trabalhadores na Agricultura do Rio Grande do Sul (FETAG-RS) e a Ordem dos Advogados do Brasil - Subseção do Rio Grande (OAB/RS) na direção do comitê de distribuição de doações para vítimas."
+    },
+    "57.611": {
+      "data": "13 de maio de 2024",
+      "resumo": "Prorroga a execução e o prazo de notificação dos acordos e parcerias administrativas nos municípios afetados pela calamidade pública declarada em 1 de maio de 2024 e reiterada em 4 de maio de 2024. Este decreto garante que os municípios afetados tenham tempo adequado para gerir os esforços de recuperação sem serem prejudicados por prazos administrativos."
+    },
+    "57.626": {
+      "data": "21 de maio de 2024",
+      "resumo": "Altera o Decreto 57.600 para atualizar a classificação de intensidade de desastre nos municípios atingidos e inclui municípios adicionais em estado de declaração de calamidade pública. O decreto reconhece o impacto evolutivo e a reclassificação necessária com base em novas informações dos municípios e na ampliação do acesso do estado às áreas afetadas."
+    },
+    "57.646": {
+      "data": "30 de maio de 2024",
+      "resumo": "Altera o Decreto 57.600, reiterando o estado de calamidade pública no Estado do Rio Grande do Sul devido às chuvas intensas de 24 de abril a maio de 2024. O decreto especifica os municípios afetados e atualiza a classificação de intensidade do desastre em diversos municípios."
+    },
+    "sem_rotulo": {
+      "data": null,
+      "resumo": "Dispositivos legais utilizados pelo governo federal"
+    },
+    "Instrumento": {
+      "data": "Data",
+      "resumo": "Descrição"
+    },
+    "Portaria MIDR nº 1.384": {
+      "data": "6 de maio de 2024",
+      "resumo": "Estabeleceu procedimentos para a liberação sumária de recursos federais."
+    },
+    "Portaria MIDR nº 1.466": {
+      "data": "7 de maio de 2024",
+      "resumo": "Alterou o Artigo 2º da Portaria MIDR nº 1384."
+    },
+    "Portaria MIDR/SEDEC nº 1.523": {
+      "data": "9 de maio de 2024",
+      "resumo": "Autorizou o empenho e transferência sumária de recursos federais para ações de socorro."
+    },
+    "Portaria MIDR nº 1.530": {
+      "data": "10 de maio de 2024",
+      "resumo": "Autorizou a movimentação financeira sem o uso do cartão."
+    },
+    "Medida Provisória n° 1.219": {
+      "data": "15 de maio de 2024",
+      "resumo": "Instituiu o Auxílio Financeiro para famílias desabrigadas ou desalojadas."
+    },
+    "Medida Provisória nº 1.220": {
+      "data": "15 de maio de 2024",
+      "resumo": "Estabeleceu a Secretaria Extraordinária de Apoio à Reconstrução do Rio Grande do Sul."
+    },
+    "Portaria MIDR nº 1.639": {
+      "data": "15 de maio de 2024",
+      "resumo": "Prorrogou a liberação sumária de recursos."
+    },
+    "Portaria MIDR nº 1.710": {
+      "data": "17 de maio de 2024",
+      "resumo": "Referente à liberação sumária de recursos"
+    },
+    "Medida Provisória nº 1.221": {
+      "data": "17 de maio de 2024",
+      "resumo": "Dispôs sobre medidas excepcionais para aquisição de bens e contratação de serviços."
+    },
+    "Portaria MIDR nº 1.774": {
+      "data": "21 de maio de 2024",
+      "resumo": "Estabeleceu procedimentos para o pagamento do Auxílio Financeiro."
+    },
+    "Portaria MIDR nº 1.936": {
+      "data": "29 de maio de 2024",
+      "resumo": "Instituiu o comitê interno para a gestão do Auxílio Financeiro."
+    },
+    "Medida provisória nº 1.228": {
+      "data": "6 de junho de 2024",
+      "resumo": "Instituiu o Auxílio Financeiro."
+    },
+    "Medida Provisória nº 1.230": {
+      "data": "7 de junho de 2024",
+      "resumo": "Instituiu o Auxílio Financeiro para trabalhadores com vínculo empregatício formal."
+    },
+    "Instrução Normativa MIDR/SEDEC nº 4": {
+      "data": "7 de junho de 2024",
+      "resumo": "Estabeleceu procedimentos para o pagamento do Auxílio Financeiro."
+    },
+    "Portaria MTE Nº 991": {
+      "data": "19 de junho de 2024",
+      "resumo": "Estabeleceu o pagamento do Auxílio Financeiro para trabalhadores com vínculo empregatício formal."
+    },
+    "Portaria MIDR nº 2.290": {
+      "data": "27 de junho de 2024",
+      "resumo": "Estabeleceu prazo para encaminhamento da lista de beneficiários para o Auxílio Financeiro."
+    }
+  },
+  "quadro_008": {
+    "Óbitos": {
+      "numero_de_pessoas": 183
+    },
+    "Feridos": {
+      "numero_de_pessoas": 806
+    },
+    "Desaparecidos": {
+      "numero_de_pessoas": 27
+    },
+    "Pessoas resgatadas": {
+      "numero_de_pessoas": 77712
+    },
+    "Abrigados": {
+      "numero_de_pessoas": 81170
+    },
+    "Desalojados": {
+      "numero_de_pessoas": 581638
+    }
+  },
+  "quadro_009": {
+    "Canoas": {
+      "corede": "Vale do Rio dos Sinos",
+      "affected_population": 160677,
+      "percentage": 46.2
+    },
+    "Porto Alegre": {
+      "corede": "Metropolitano Delta do Jacuí",
+      "affected_population": 152258,
+      "percentage": 11.4
+    },
+    "São Leopoldo": {
+      "corede": "Vale do Rio dos Sinos",
+      "affected_population": 93729,
+      "percentage": 43.1
+    },
+    "Rio Grande": {
+      "corede": "Sul",
+      "affected_population": 43800,
+      "percentage": 22.8
+    },
+    "Pelotas": {
+      "corede": "Sul",
+      "affected_population": 43750,
+      "percentage": 13.4
+    },
+    "Eldorado do Sul": {
+      "corede": "Metropolitano Delta do Jacuí",
+      "affected_population": 32115,
+      "percentage": 81.2
+    },
+    "Novo Hamburgo": {
+      "corede": "Vale do Rio dos Sinos",
+      "affected_population": 29100,
+      "percentage": 12.8
+    },
+    "Guaíba": {
+      "corede": "Metropolitano Delta do Jacuí",
+      "affected_population": 26693,
+      "percentage": 28.7
+    },
+    "Alvorada": {
+      "corede": "Metropolitano Delta do Jacuí",
+      "affected_population": 21077,
+      "percentage": 11.3
+    },
+    "Estrela": {
+      "corede": "Vale do Taquari",
+      "affected_population": 17655,
+      "percentage": 54.9
+    },
+    "Igrejinha": {
+      "corede": "Paranhana Encosta da Serra",
+      "affected_population": 16682,
+      "percentage": 50.8
+    },
+    "Lajeado": {
+      "corede": "Vale do Taquari",
+      "affected_population": 12550,
+      "percentage": 13.4
+    },
+    "Cachoeirinha": {
+      "corede": "Metropolitano Delta do Jacuí",
+      "affected_population": 12244,
+      "percentage": 9.0
+    },
+    "Triunfo": {
+      "corede": "Metropolitano Delta do Jacuí",
+      "affected_population": 11881,
+      "percentage": 43.2
+    },
+    "Esteio": {
+      "corede": "Vale do Rio dos Sinos",
+      "affected_population": 11466,
+      "percentage": 15.1
+    }
+  },
+  "quadro_010": {
+    "Canoas": {
+      "obitos": 31
+    },
+    "Itaara": {
+      "obitos": 2
+    },
+    "Farroupilha": {
+      "obitos": 1
+    },
+    "Roca Sales": {
+      "obitos": 14
+    },
+    "Lajeado": {
+      "obitos": 2
+    },
+    "General Câmara": {
+      "obitos": 1
+    },
+    "Cruzeiro do Sul": {
+      "obitos": 13
+    },
+    "Paverama": {
+      "obitos": 2
+    },
+    "Guaíba": {
+      "obitos": 1
+    },
+    "Bento Gonçalves": {
+      "obitos": 11
+    },
+    "Pinhal Grande": {
+      "obitos": 2
+    },
+    "Marques de Souza": {
+      "obitos": 1
+    },
+    "Caxias do Sul": {
+      "obitos": 9
+    },
+    "Salvador do Sul": {
+      "obitos": 2
+    },
+    "Montenegro": {
+      "obitos": 1
+    },
+    "São Leopoldo": {
+      "obitos": 9
+    },
+    "Santa Cruz do Sul": {
+      "obitos": 2
+    },
+    "Nova Petrópolis": {
+      "obitos": 1
+    },
+    "Gramado": {
+      "obitos": 7
+    },
+    "São Vendelino": {
+      "obitos": 2
+    },
+    "Nova Hamburgo": {
+      "obitos": 1
+    },
+    "Eldorado do Sul": {
+      "obitos": 6
+    },
+    "Serafina Correa": {
+      "obitos": 2
+    },
+    "Pantano Grande": {
+      "obitos": 1
+    },
+    "Porto Alegre": {
+      "obitos": 5
+    },
+    "Taquara": {
+      "obitos": 2
+    },
+    "Putinga": {
+      "obitos": 1
+    },
+    "Santa Maria": {
+      "obitos": 5
+    },
+    "Taquari": {
+      "obitos": 2
+    },
+    "Relvado": {
+      "obitos": 1
+    },
+    "Venâncio Aires": {
+      "obitos": 5
+    },
+    "Teutônia": {
+      "obitos": 2
+    },
+    "São Jerônimo": {
+      "obitos": 1
+    },
+    "Veranópolis": {
+      "obitos": 5
+    },
+    "Agudo": {
+      "obitos": 1
+    },
+    "São João do Polêsine": {
+      "obitos": 1
+    },
+    "Sinimbu": {
+      "obitos": 3
+    },
+    "Alvorada": {
+      "obitos": 1
+    },
+    "Segredo": {
+      "obitos": 1
+    },
+    "Três Coroas": {
+      "obitos": 3
+    },
+    "Arroio do Meio": {
+      "obitos": 1
+    },
+    "Silveira Martins": {
+      "obitos": 1
+    },
+    "Boa Vista do Sul": {
+      "obitos": 2
+    },
+    "Bom Princípio": {
+      "obitos": 1
+    },
+    "Sobradinho": {
+      "obitos": 1
+    },
+    "Canela": {
+      "obitos": 2
+    },
+    "Cachoeirinha": {
+      "obitos": 1
+    },
+    "Travesseiro": {
+      "obitos": 1
+    },
+    "Capitão": {
+      "obitos": 2
+    },
+    "Capela de Santana": {
+      "obitos": 1
+    },
+    "Vale do Sol": {
+      "obitos": 1
+    },
+    "Estrela": {
+      "obitos": 2
+    },
+    "Charqueadas": {
+      "obitos": 1
+    },
+    "Forquetinha": {
+      "obitos": 2
+    },
+    "Encantado": {
+      "obitos": 1
+    }
+  },
+  "quadro_011": {
+    "Cruzeiro do Sul": {
+      "desaparecidos": 5
+    },
+    "Porto Alegre": {
+      "desaparecidos": 1
+    },
+    "Lajeado": {
+      "desaparecidos": 3
+    },
+    "Estrela": {
+      "desaparecidos": 1
+    },
+    "Bento Gonçalves": {
+      "desaparecidos": 4
+    },
+    "Agudo": {
+      "desaparecidos": 1
+    },
+    "Canoas": {
+      "desaparecidos": 2
+    },
+    "Marques de Souza": {
+      "desaparecidos": 1
+    },
+    "Rocas Sales": {
+      "desaparecidos": 2
+    },
+    "Poço das Antas": {
+      "desaparecidos": 1
+    },
+    "Encantado": {
+      "desaparecidos": 2
+    },
+    "Barros Casal": {
+      "desaparecidos": 1
+    },
+    "Caxias do Sul": {
+      "desaparecidos": 1
+    },
+    "Relvado": {
+      "desaparecidos": 1
+    },
+    "São Leopoldo": {
+      "desaparecidos": 1
+    }
+  },
+  "quadro_012": {
+    "Abrigos pesquisados": {
+      "total": 981,
+      "unidade": "abrigos"
+    },
+    "Municípios com abrigo": {
+      "total": 117,
+      "unidade": "municípios"
+    },
+    "Cumulativo de pessoas acolhidas": {
+      "total": 69415,
+      "unidade": "pessoas"
+    },
+    "Famílias acolhidas": {
+      "total": 18172,
+      "unidade": "famílias"
+    },
+    "Crianças e Adolescentes (0-17 anos)": {
+      "total": 15341,
+      "unidade": "pessoas"
+    },
+    "Crianças (0-5 anos)": {
+      "total": 3930,
+      "unidade": "pessoas"
+    },
+    "Pessoas com deficiência": {
+      "total": 2042,
+      "unidade": "pessoas"
+    },
+    "Pessoas idosas": {
+      "total": 7457,
+      "unidade": "pessoas"
+    }
+  },
+  "quadro_013": {
+    "Assistência social": {
+      "total_de_abrigos": 412
+    },
+    "Voluntários": {
+      "total_de_abrigos": 322
+    },
+    "Outros": {
+      "total_de_abrigos": 189
+    },
+    "Organizações da sociedade civil": {
+      "total_de_abrigos": 165
+    },
+    "Gabinete das prefeituras": {
+      "total_de_abrigos": 94
+    },
+    "Defesa Civil": {
+      "total_de_abrigos": 91
+    },
+    "Saúde": {
+      "total_de_abrigos": 12
+    }
+  },
+  "quadro_014": {
+    "713": {
+      "familias_com_danos_materiais_s_desalojamento": 264,
+      "equipamentos_de_pesca_danificados": 2858
+    }
+  },
+  "quadro_015a": {
+    "Custos Operativos de Resgate - Horas de voo em ações de resgate, transporte de donativos e evacuação aeromédica (estadual)": {
+      "total_em_milhares_de_r": 80000
+    },
+    "Custos Operativos de Resgate - Uso de embarcações (estadual)": {
+      "total_em_milhares_de_r": 5832
+    },
+    "Custos Operativos de Resgate - Repasse Ministério da Defesa (federal)": {
+      "total_em_milhares_de_r": 207074.7
+    },
+    "Repasses da Defesa Civil aos municípios - Fundo a Fundo (estadual)": {
+      "total_em_milhares_de_r": 70000
+    },
+    "Repasses da Defesa Civil aos municípios - Assistência Humanitária (federal)": {
+      "total_em_milhares_de_r": 128211
+    },
+    "Repasses da Defesa Civil aos municípios - AH - Rito sumário (federal)": {
+      "total_em_milhares_de_r": 26400
+    },
+    "Repasses da Defesa Civil aos municípios - AH - Rito sumário proteção animal (federal)": {
+      "total_em_milhares_de_r": 5040
+    },
+    "Transferências diretas à população afetada - Auxílio Reconstrução (governo federal)": {
+      "total_em_milhares_de_r": 1910806.8
+    },
+    "Transferências diretas à população afetada - Programa Bolsa Família adicionais (governo federal)": {
+      "total_em_milhares_de_r": 29288.21
+    },
+    "Transferências diretas à população afetada - Volta por Cima (estadual)": {
+      "total_em_milhares_de_r": 223695
+    },
+    "Transferências diretas à população afetada - Aluguel Social (estadual)": {
+      "total_em_milhares_de_r": 30000
+    },
+    "Apoio em espécie (MDS Federal) - Cestas básicas, abrigos e parcela extra do Sistema Único de Assistência Social (federal)": {
+      "total_em_milhares_de_r": 68935.28
+    },
+    "Apoio em espécie (MDS Federal) - Total": {
+      "total_em_milhares_de_r": 2785282.99
+    }
+  },
+  "quadro_015b": {
+    "Horas de voo em ações de resgate, transporte de donativos e evacuação aeromédica": {
+      "quantidade": 3200,
+      "unidade": "Hr",
+      "custo_unitario": 25000,
+      "total_em_milhares_r": 80000
+    },
+    "Uso de embarcações": {
+      "quantidade": 243,
+      "unidade": "Unidade/30 dias",
+      "custo_unitario": 1600.0,
+      "total_em_milhares_r": 5832.0
+    },
+    "Repasse do Ministério da Defesa para custeio de operações": {
+      "quantidade": null,
+      "unidade": null,
+      "custo_unitario": null,
+      "total_em_milhares_r": 207074.68
+    },
+    "Total": {
+      "quantidade": null,
+      "unidade": null,
+      "custo_unitario": null,
+      "total_em_milhares_r": 292906.7
+    }
+  },
+  "quadro_015c": {
+    "Repasses aos municípios - Fundo a Fundo (Defesa Civil Estadual)": {
+      "planos_aprovados": null,
+      "total_em_milhares_r": 70000
+    },
+    "Repasses aos municípios - Rito sumário (Assistência humanitária)": {
+      "planos_aprovados": 114,
+      "total_em_milhares_r": 26400.0
+    },
+    "Repasses aos municípios - Rito sumário (Proteção animal)": {
+      "planos_aprovados": 69,
+      "total_em_milhares_r": 5040.0
+    },
+    "Repasses aos municípios - Assistência humanitária": {
+      "planos_aprovados": 131,
+      "total_em_milhares_r": 128211.0
+    },
+    "Repasses aos municípios - Total": {
+      "planos_aprovados": null,
+      "total_em_milhares_r": 229651.0
+    },
+    "Apoio em Espécie - Cestas básicas, abrigos e parcela extra do Sistema Único de Assistência Social (via MDS)": {
+      "planos_aprovados": 112,
+      "total_em_milhares_r": 68935.28
+    },
+    "Apoio em Espécie - Total": {
+      "planos_aprovados": null,
+      "total_em_milhares_r": 68935.28
+    }
+  },
+  "quadro_015d": {
+    "Medical Corps International": {
+      "item": "Kits de higiene pessoal",
+      "quantidade": 4170,
+      "total_em_milhares_r": 211.94
+    },
+    "IFRC": {
+      "item": "Garrafas de água dobráveis",
+      "quantidade": 500,
+      "total_em_milhares_r": 8.03
+    },
+    "IFRC (2)": {
+      "item": "Kit de cozinha",
+      "quantidade": 500,
+      "total_em_milhares_r": 79.67
+    },
+    "IFRC (3)": {
+      "item": "Kits de higiene familiar",
+      "quantidade": 500,
+      "total_em_milhares_r": 84.81
+    },
+    "IFRC (4)": {
+      "item": "Kits de limpeza",
+      "quantidade": 500,
+      "total_em_milhares_r": 82.24
+    },
+    "IFRC (5)": {
+      "item": "Filtros de água",
+      "quantidade": 500,
+      "total_em_milhares_r": 83.52
+    },
+    "Total": {
+      "item": null,
+      "quantidade": null,
+      "total_em_milhares_r": 550.21
+    }
+  },
+  "quadro_015e": {
+    "Programa Bolsa Família": {
+      "esfera": "Federal",
+      "criterio": "Família tenha renda mensal de até R$ 218,00 por pessoa",
+      "valor_da_transferencia_em_r": 719.1,
+      "familias_usuarias": 40334,
+      "total_da_transferencia_em_milhares_r": 29000.0
+    },
+    "Programa Bolsa Família (2)": {
+      "esfera": "Federal",
+      "criterio": "Via Cadastro Único",
+      "valor_da_transferencia_em_r": "(valor médio, mensal)",
+      "familias_usuarias": "(novas famílias incluídas)",
+      "total_da_transferencia_em_milhares_r": null
+    },
+    "Programa Bolsa Família (3)": {
+      "esfera": "Federal",
+      "criterio": "Números específicos: 505,32 mil para 10.107 olescentes entre 16 e 18 341 gestantes.",
+      "valor_da_transferencia_em_r": "1,79 milhão para 11.936 crianças de 7 a 16 anos, 57,65 mil para",
+      "familias_usuarias": "crianças anos, 106,9 1.153",
+      "total_da_transferencia_em_milhares_r": "de 0 a 6 anos; mil para 2.138 adnutrizes, 17 mil para"
+    },
+    "Auxílio Reconstrução": {
+      "esfera": "Federal",
+      "criterio": "Via DataPrev",
+      "valor_da_transferencia_em_r": 5100.0,
+      "familias_usuarias": 374668,
+      "total_da_transferencia_em_milhares_r": 1910807.0
+    },
+    "Volta por Cima": {
+      "esfera": null,
+      "criterio": "Via Cadastro Único",
+      "valor_da_transferencia_em_r": 2500.0,
+      "familias_usuarias": 212878,
+      "total_da_transferencia_em_milhares_r": 223695.0
+    },
+    "SOS RS": {
+      "esfera": "Estadual",
+      "criterio": "Via Cadastro Único",
+      "valor_da_transferencia_em_r": "2.000,00 (parcela única)",
+      "familias_usuarias": 36829,
+      "total_da_transferencia_em_milhares_r": 73658.0
+    },
+    "Aluguel Social": {
+      "esfera": "Estadual",
+      "criterio": "Via Cadastro Único",
+      "valor_da_transferencia_em_r": null,
+      "familias_usuarias": 75000,
+      "total_da_transferencia_em_milhares_r": 30000.0
+    },
+    "Programa Apoio Financeiro": {
+      "esfera": "Estadual",
+      "criterio": "Via Ministério do Trabalho e Emprego",
+      "valor_da_transferencia_em_r": 2824.0,
+      "familias_usuarias": 728000,
+      "total_da_transferencia_em_milhares_r": 2055872.0
+    },
+    "FGTS – Saque Calamidade (em 03/06)": {
+      "esfera": "(Privado)",
+      "criterio": "Via Previdência",
+      "valor_da_transferencia_em_r": "Até 6.220 (por contribuinte)",
+      "familias_usuarias": 390900,
+      "total_da_transferencia_em_milhares_r": 2431398.0
+    }
+  },
+  "quadro_016": {
+    "Danos": {
+      "publico": 1890114,
+      "privado": 576294,
+      "total": 2466408
+    },
+    "Perdas": {
+      "publico": 380660,
+      "privado": 95307,
+      "total": 475967
+    },
+    "Custos adicionais": {
+      "publico": 82062,
+      "privado": 24896,
+      "total": 106958
+    },
+    "Total": {
+      "publico": 2352836,
+      "privado": 696497,
+      "total": 3049333
+    }
+  },
+  "quadro_017": {
+    "Estadual": {
+      "no_de_estabelecimentos_educativos": 2345,
+      "urbano": 1820,
+      "rural": 525
+    },
+    "Federal": {
+      "no_de_estabelecimentos_educativos": 49,
+      "urbano": 40,
+      "rural": 9
+    },
+    "Municipal": {
+      "no_de_estabelecimentos_educativos": 4844,
+      "urbano": 3635,
+      "rural": 1209
+    },
+    "Privada": {
+      "no_de_estabelecimentos_educativos": 2738,
+      "urbano": 2714,
+      "rural": 24
+    },
+    "Total": {
+      "no_de_estabelecimentos_educativos": 9976,
+      "urbano": 8209,
+      "rural": 1767
+    }
+  },
+  "quadro_018": {
+    "Centro Universitário": {
+      "no_de_estabelecimentos_educativos": 12,
+      "publico": null,
+      "privado": 12
+    },
+    "Faculdade": {
+      "no_de_estabelecimentos_educativos": 82,
+      "publico": 1,
+      "privado": 81
+    },
+    "Instituto Federal de Educação": {
+      "no_de_estabelecimentos_educativos": 3,
+      "publico": 3,
+      "privado": null
+    },
+    "Universidade": {
+      "no_de_estabelecimentos_educativos": 21,
+      "publico": 7,
+      "privado": 14
+    },
+    "Total": {
+      "no_de_estabelecimentos_educativos": 118,
+      "publico": 11,
+      "privado": 107
+    }
+  },
+  "quadro_019": {
+    "Tipo 1": {
+      "descricao": "Sem danos"
+    },
+    "Tipo 2": {
+      "descricao": "Sem danos, com dificuldade de acesso ou em uso para ajuda humanitária"
+    },
+    "Tipo 3": {
+      "descricao": "Danos simples, necessitam de limpeza e/ou pequeno reparo para reabrirem total ou parcialmente"
+    },
+    "Tipo 4": {
+      "descricao": "Danificados, necessitam de reformas específicas (elétrica, hidráulica etc.)"
+    },
+    "Tipo 5": {
+      "descricao": "Totalmente inoperantes, necessitam de reconstrução total ou realocação"
+    }
+  },
+  "quadro_020": {
+    "Estadual": {
+      "tipo_3_danos_simples": 342,
+      "tipo_4_danificados": 118,
+      "tipo_5_inoperantes": 23,
+      "total": 483
+    },
+    "Federal": {
+      "tipo_3_danos_simples": 1,
+      "tipo_4_danificados": 1,
+      "tipo_5_inoperantes": 0,
+      "total": 2
+    },
+    "Municipal": {
+      "tipo_3_danos_simples": 135,
+      "tipo_4_danificados": 130,
+      "tipo_5_inoperantes": 10,
+      "total": 275
+    },
+    "Privada": {
+      "tipo_3_danos_simples": 81,
+      "tipo_4_danificados": 132,
+      "tipo_5_inoperantes": 8,
+      "total": 221
+    },
+    "Total": {
+      "tipo_3_danos_simples": 559,
+      "tipo_4_danificados": 381,
+      "tipo_5_inoperantes": 41,
+      "total": 981
+    }
+  },
+  "quadro_021": {
+    "Faculdade": {
+      "tipo_3_danos_simples": 7,
+      "tipo_4_danos_significativos": 2,
+      "total": 9
+    },
+    "Universidade": {
+      "tipo_3_danos_simples": 2,
+      "tipo_4_danos_significativos": null,
+      "total": 2
+    },
+    "Total": {
+      "tipo_3_danos_simples": 9,
+      "tipo_4_danos_significativos": 2,
+      "total": 11
+    }
+  },
+  "quadro_022": {
+    "Educação básica - Infraestruturas": {
+      "publico": 1651930,
+      "privado": 451405,
+      "total": 2103336
+    },
+    "Educação básica - Mobiliário / equipamentos / materiais didáticos": {
+      "publico": 200450,
+      "privado": 62952,
+      "total": 263402
+    },
+    "Educação básica - Total": {
+      "publico": 1852380,
+      "privado": 514358,
+      "total": 2366738
+    },
+    "Educação superior - Infraestruturas": {
+      "publico": 24454,
+      "privado": 50766,
+      "total": 75220
+    },
+    "Educação superior - Mobiliário / equipamentos / materiais didáticos": {
+      "publico": 13279,
+      "privado": 11171,
+      "total": 24450
+    },
+    "Educação superior - Total": {
+      "publico": 37734,
+      "privado": 61937,
+      "total": 99670
+    },
+    "Educação superior - Total final": {
+      "publico": 1890114,
+      "privado": 576294,
+      "total": 2466408
+    }
+  },
+  "quadro_023": {
+    "Porto Alegre": {
+      "educacao_basica": 632858,
+      "educacao_superior": 44185,
+      "danos_totais": 677043,
+      "percentual_do_total": 27.5
+    },
+    "Canoas": {
+      "educacao_basica": 424533,
+      "educacao_superior": null,
+      "danos_totais": 424533,
+      "percentual_do_total": 17.2
+    },
+    "São Leopoldo": {
+      "educacao_basica": 197556,
+      "educacao_superior": null,
+      "danos_totais": 197556,
+      "percentual_do_total": 8.0
+    },
+    "Rio Grande": {
+      "educacao_basica": 161848,
+      "educacao_superior": 16871,
+      "danos_totais": 178719,
+      "percentual_do_total": 7.2
+    },
+    "Eldorado do Sul": {
+      "educacao_basica": 101721,
+      "educacao_superior": null,
+      "danos_totais": 101721,
+      "percentual_do_total": 4.1
+    },
+    "Lajeado": {
+      "educacao_basica": 93864,
+      "educacao_superior": null,
+      "danos_totais": 93864,
+      "percentual_do_total": 3.8
+    },
+    "Novo Hamburgo": {
+      "educacao_basica": 68890,
+      "educacao_superior": null,
+      "danos_totais": 68890,
+      "percentual_do_total": 2.8
+    },
+    "Guaíba": {
+      "educacao_basica": 54508,
+      "educacao_superior": null,
+      "danos_totais": 54508,
+      "percentual_do_total": 2.2
+    },
+    "Pelotas": {
+      "educacao_basica": 9278,
+      "educacao_superior": 34668,
+      "danos_totais": 43946,
+      "percentual_do_total": 1.8
+    },
+    "Montenegro": {
+      "educacao_basica": 38107,
+      "educacao_superior": null,
+      "danos_totais": 38107,
+      "percentual_do_total": 1.5
+    },
+    "Santa Maria": {
+      "educacao_basica": 37882,
+      "educacao_superior": null,
+      "danos_totais": 37882,
+      "percentual_do_total": 1.5
+    },
+    "São Sebastião do Caí": {
+      "educacao_basica": 33979,
+      "educacao_superior": null,
+      "danos_totais": 33979,
+      "percentual_do_total": 1.4
+    },
+    "Arroio do Meio": {
+      "educacao_basica": 30408,
+      "educacao_superior": null,
+      "danos_totais": 30408,
+      "percentual_do_total": 1.2
+    },
+    "Cachoeirinha": {
+      "educacao_basica": 28016,
+      "educacao_superior": null,
+      "danos_totais": 28016,
+      "percentual_do_total": 1.1
+    },
+    "Gravataí": {
+      "educacao_basica": 24165,
+      "educacao_superior": null,
+      "danos_totais": 24165,
+      "percentual_do_total": 1.0
+    },
+    "Caxias do Sul": {
+      "educacao_basica": 23470,
+      "educacao_superior": null,
+      "danos_totais": 23470,
+      "percentual_do_total": 1.0
+    },
+    "Esteio": {
+      "educacao_basica": 22726,
+      "educacao_superior": null,
+      "danos_totais": 22726,
+      "percentual_do_total": 0.9
+    },
+    "Venâncio Aires": {
+      "educacao_basica": 21457,
+      "educacao_superior": null,
+      "danos_totais": 21457,
+      "percentual_do_total": 0.9
+    },
+    "Estrela": {
+      "educacao_basica": 16537,
+      "educacao_superior": 3946,
+      "danos_totais": 20483,
+      "percentual_do_total": 0.8
+    },
+    "Roca Sales": {
+      "educacao_basica": 17784,
+      "educacao_superior": null,
+      "danos_totais": 17784,
+      "percentual_do_total": 0.7
+    }
+  },
+  "quadro_024": {
+    "Educação básica": {
+      "horas_aula_perdidas": 55749
+    },
+    "Educação superior": {
+      "horas_aula_perdidas": 24033
+    },
+    "Total": {
+      "horas_aula_perdidas": 79782
+    }
+  },
+  "quadro_025": {
+    "Educação básica - Perdas por remuneração do pessoal docente": {
+      "publico": 85368,
+      "privado": null,
+      "total": 85368
+    },
+    "Educação básica - Perdas por remuneração do pessoal administrativo": {
+      "publico": 39273,
+      "privado": null,
+      "total": 39273
+    },
+    "Educação básica - Perdas de receitas das escolas particulares": {
+      "publico": null,
+      "privado": 42551,
+      "total": 42551
+    },
+    "Educação básica - Total": {
+      "publico": 124642,
+      "privado": 42551,
+      "total": 167192
+    },
+    "Educação superior - Perdas por remuneração do pessoal docente": {
+      "publico": 192655,
+      "privado": null,
+      "total": 192655
+    },
+    "Educação superior - Perdas por remuneração do pessoal administrativo": {
+      "publico": 63363,
+      "privado": null,
+      "total": 63363
+    },
+    "Educação superior - Perdas de receitas das universidades particulares": {
+      "publico": null,
+      "privado": 52756,
+      "total": 52756
+    },
+    "Educação superior - Total": {
+      "publico": 256018,
+      "privado": 52756,
+      "total": 308774
+    },
+    "Educação superior - Total final": {
+      "publico": 380660,
+      "privado": 95306,
+      "total": 475966
+    }
+  }
+}
