@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enchentes no Rio Grande do Sul</title>
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="dashboard">
+      <header class="header">
+        <div>
+          <p class="eyebrow">Rio Grande do Sul · maio de 2024</p>
+          <h1>Impactos das enchentes</h1>
+        </div>
+        <label class="search">
+          <span>Buscar município</span>
+          <input id="municipality-search" type="search" placeholder="Ex.: Canoas" />
+        </label>
+      </header>
+
+      <section id="summary" class="summary" aria-label="Resumo geral"></section>
+
+      <section class="map-panel">
+        <div class="map-toolbar">
+          <div>
+            <h2>Municípios afetados</h2>
+            <p id="map-caption">Tamanho do círculo por óbitos</p>
+          </div>
+          <div class="metric-switch" role="group" aria-label="Métrica do mapa">
+            <button class="active" type="button" data-metric="deaths">Óbitos</button>
+            <button type="button" data-metric="affectedPopulation">População afetada</button>
+            <button type="button" data-metric="displaced">Desalojados</button>
+          </div>
+        </div>
+        <div id="map" aria-label="Mapa dos municípios afetados"></div>
+      </section>
+
+      <section class="ranking-panel">
+        <div class="ranking-heading">
+          <h2>Maior impacto registrado</h2>
+          <button id="ranking-toggle" type="button" aria-expanded="true">Recolher</button>
+        </div>
+        <div id="ranking" class="ranking"></div>
+      </section>
+    </main>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      crossorigin=""
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
