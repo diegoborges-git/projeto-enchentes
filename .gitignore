@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+ambiente_virtual/
+.venv/
+venv/
+dados/setores/
+*.gpkg
+.env
+notebooks/rais_poa_estabelecimentos.csv
