@@ -1,3 +1,7 @@
+"""
+Utilizei IA no desenvolvimento desse módulo, para a criação do dashboard com Streamlit. 
+Pietro utilizou HTML e CSS, mas eu não tenho tais habilidades.
+"""
 from pathlib import Path
 import re
 import sqlite3
@@ -5,23 +9,26 @@ import unicodedata
 
 import folium
 import geopandas as gpd
+import matplotlib.colors as mcolors
 import pandas as pd
 from shapely import wkb
 from shapely.ops import unary_union
 
 
-PALETA_BAIRROS = [
-    "#4e79a7",  # azul aço
-    "#59a14f",  # verde folha
-    "#edc948",  # amarelo suave
-    "#e15759",  # coral/vermelho
-    "#76b7b2",  # verde-água / teal
-    "#f28e2b",  # laranja/âmbar
-    "#b07aa1",  # lilás/roxo
-    "#9c755f",  # marrom suave
-    "#8cd17d",  # verde claro
-    "#ff9da7",  # rosa suave
-]
+CORES_AMBAR_RUBI = ["#fef9c3", "#fde047", "#f59e0b", "#ea580c", "#991b1b"]
+CMAP_AMBAR_RUBI = mcolors.LinearSegmentedColormap.from_list(
+    "ambar_a_rubi", CORES_AMBAR_RUBI
+)
+GRADIENTE_VERTICAL_CSS = f"linear-gradient(180deg, {', '.join(reversed(CORES_AMBAR_RUBI))})"
+
+
+def cor_por_percentual_gradual(pct: float) -> str:
+    """Calcula cor contínua na escala Âmbar a Rubi conforme a porcentagem afetada (0 a 100)."""
+    pct_limpo = max(0.0, min(100.0, float(pct)))
+    if pct_limpo <= 0.0:
+        return "#94a3b8"
+    t = 0.12 + 0.88 * (pct_limpo / 100.0)
+    return mcolors.to_hex(CMAP_AMBAR_RUBI(min(1.0, max(0.0, t))))
 
 
 def normalizar_nome_bairro(texto: object) -> str:
@@ -47,12 +54,11 @@ def _ler_geometria_gpkg(blob_geom: bytes | None):
     return wkb.loads(blob_geom[offset_wkb:])
 
 
-def carregar_bairros_geodf(
+def carregar_bairros_base_geodf(
     caminho_gpkg: Path,
-    caminho_csv: Path,
     tolerancia_simplificacao: float = 0.00008,
 ) -> gpd.GeoDataFrame:
-    """Dissolve os setores de Porto Alegre por bairro e une métricas de data_limpo.csv."""
+    """Carrega e dissolve os setores censitários de Porto Alegre por bairro."""
     conexao = sqlite3.connect(caminho_gpkg)
     try:
         cursor = conexao.cursor()
@@ -95,48 +101,126 @@ def carregar_bairros_geodf(
         )
 
     gdf_bairros = gpd.GeoDataFrame(bairros_dissolvidos, crs="EPSG:4326")
+    return gdf_bairros.sort_values("bairro_mapa").reset_index(drop=True)
 
-    df_csv = pd.read_csv(caminho_csv)
-    df_csv["bairro_chave"] = df_csv["bairro"].apply(normalizar_nome_bairro)
 
-    metricas_por_bairro = (
-        df_csv.groupby(["bairro", "bairro_chave"], as_index=False)
-        .agg(
-            populacao_total=("population", "max"),
-            edificacoes_totais=("total_buildings", "max"),
-            max_edificacoes_afetadas=("affected_buildings", "max"),
-            max_populacao_afetada=("affected_population", "max"),
-            max_percentual_afetado=("percentage", "max"),
+def _agragar_nivel_csv(df_csv: pd.DataFrame, nivel_efetivo: float) -> pd.DataFrame:
+    """Agrega os dados de data_limpo.csv para um nível específico (em metros)."""
+    df_nivel = df_csv[df_csv["nivel_m"].round(1) == round(float(nivel_efetivo), 1)].copy()
+    if df_nivel.empty:
+        return pd.DataFrame(
+            columns=[
+                "bairro_chave",
+                "bairro_csv",
+                "populacao_total",
+                "edificacoes_totais",
+                "edificacoes_afetadas",
+                "populacao_afetada",
+                "percentual_afetado",
+            ]
         )
+
+    return df_nivel.groupby("bairro_chave", as_index=False).agg(
+        bairro_csv=("bairro", "first"),
+        populacao_total=("population", "max"),
+        edificacoes_totais=("total_buildings", "max"),
+        edificacoes_afetadas=("affected_buildings", "max"),
+        populacao_afetada=("affected_population", "max"),
+        percentual_afetado=("percentage", "max"),
     )
 
-    gdf_final = gdf_bairros.merge(metricas_por_bairro, on="bairro_chave", how="left")
-    gdf_final["nome_exibicao"] = gdf_final["bairro"].fillna(gdf_final["bairro_mapa"])
-    gdf_final["populacao_total"] = gdf_final["populacao_total"].fillna(0).astype(int)
-    gdf_final["edificacoes_totais"] = gdf_final["edificacoes_totais"].fillna(0).astype(int)
-    gdf_final["max_edificacoes_afetadas"] = (
-        gdf_final["max_edificacoes_afetadas"].fillna(0).astype(int)
-    )
-    gdf_final["max_populacao_afetada"] = (
-        gdf_final["max_populacao_afetada"].fillna(0).astype(int)
-    )
-    gdf_final["max_percentual_afetado"] = (
-        gdf_final["max_percentual_afetado"].fillna(0.0).round(2)
-    )
 
-    gdf_ordenado = gdf_final.sort_values("nome_exibicao").reset_index(drop=True)
-    gdf_ordenado["cor_bairro"] = [
-        PALETA_BAIRROS[i % len(PALETA_BAIRROS)] for i in range(len(gdf_ordenado))
-    ]
-    return gdf_ordenado
+def obter_resumo_cidade_nivel(df_csv: pd.DataFrame, nivel_m: float) -> dict:
+    """Retorna os indicadores gerais de Porto Alegre para o nível selecionado."""
+    niveis_disponiveis = sorted(df_csv["nivel_m"].dropna().round(1).unique())
+    nivel_efetivo = (
+        float(min(niveis_disponiveis, key=lambda x: abs(float(x) - float(nivel_m))))
+        if len(niveis_disponiveis) > 0
+        else float(nivel_m)
+    )
+    df_niv = _agragar_nivel_csv(df_csv, nivel_efetivo)
+    if df_niv.empty:
+        return {
+            "nivel_efetivo": nivel_efetivo,
+            "populacao_afetada": 0,
+            "edificacoes_afetadas": 0,
+            "bairros_atingidos": 0,
+            "total_bairros": 0,
+            "df_nivel": df_niv,
+        }
+
+    bairros_atingidos = int(
+        ((df_niv["edificacoes_afetadas"] > 0) | (df_niv["populacao_afetada"] > 0)).sum()
+    )
+    return {
+        "nivel_efetivo": nivel_efetivo,
+        "populacao_afetada": int(round(df_niv["populacao_afetada"].sum())),
+        "edificacoes_afetadas": int(round(df_niv["edificacoes_afetadas"].sum())),
+        "bairros_atingidos": bairros_atingidos,
+        "total_bairros": int(len(df_niv)),
+        "df_nivel": df_niv,
+    }
+
+
+def obter_curva_populacao_cidade(df_csv: pd.DataFrame) -> pd.DataFrame:
+    """Calcula a população e edificações afetadas na cidade para cada nível de 3,0 m a 10,0 m."""
+    if df_csv.empty:
+        return pd.DataFrame(
+            columns=["nivel_m", "populacao_afetada", "edificacoes_afetadas", "bairros_atingidos"]
+        )
+
+    niveis = sorted(df_csv["nivel_m"].dropna().round(1).unique())
+    linhas = []
+    for n in niveis:
+        res = obter_resumo_cidade_nivel(df_csv, float(n))
+        linhas.append(
+            {
+                "nivel_m": float(n),
+                "populacao_afetada": res["populacao_afetada"],
+                "edificacoes_afetadas": res["edificacoes_afetadas"],
+                "bairros_atingidos": res["bairros_atingidos"],
+            }
+        )
+    return pd.DataFrame(linhas)
+
+
+def aplicar_nivel_aos_bairros(
+    gdf_base: gpd.GeoDataFrame,
+    df_csv: pd.DataFrame,
+    nivel_m: float,
+) -> gpd.GeoDataFrame:
+    """Cruza a geometria dos bairros com os dados de data_limpo.csv no nivel_m escolhido."""
+    niveis_disponiveis = sorted(df_csv["nivel_m"].dropna().unique())
+    if not niveis_disponiveis:
+        nivel_efetivo = float(nivel_m)
+        df_nivel_agg = _agragar_nivel_csv(df_csv.iloc[0:0], nivel_efetivo)
+    else:
+        nivel_efetivo = min(
+            niveis_disponiveis, key=lambda x: abs(float(x) - float(nivel_m))
+        )
+        df_nivel_agg = _agragar_nivel_csv(df_csv, float(nivel_efetivo))
+
+    gdf_niv = gdf_base.merge(df_nivel_agg, on="bairro_chave", how="left")
+    gdf_niv["nome_exibicao"] = gdf_niv["bairro_csv"].fillna(gdf_niv["bairro_mapa"])
+    gdf_niv["nivel_aplicado"] = round(float(nivel_efetivo), 1)
+    gdf_niv["populacao_total"] = gdf_niv["populacao_total"].fillna(0).astype(int)
+    gdf_niv["edificacoes_totais"] = gdf_niv["edificacoes_totais"].fillna(0).astype(int)
+    gdf_niv["edificacoes_afetadas"] = (
+        gdf_niv["edificacoes_afetadas"].fillna(0).astype(int)
+    )
+    gdf_niv["populacao_afetada"] = gdf_niv["populacao_afetada"].fillna(0).round().astype(int)
+    gdf_niv["percentual_afetado"] = gdf_niv["percentual_afetado"].fillna(0.0).round(2)
+    gdf_niv["cor_nivel"] = gdf_niv["percentual_afetado"].apply(cor_por_percentual_gradual)
+
+    return gdf_niv.sort_values("nome_exibicao").reset_index(drop=True)
 
 
 def construir_mapa_bairros_inct(
     gdf_bairros: gpd.GeoDataFrame,
     bairro_selecionado: str | None = None,
-    estilo_ruas_claro: bool = True,
+    nivel_m: float = 5.3,
 ) -> folium.Map:
-    """Cria o mapa Folium com ruas visíveis, cores por bairro e destaque da seleção."""
+    """Cria o mapa Folium com gradiente Âmbar a Rubi, barra vertical e borda no selecionado."""
     chave_selecionada = normalizar_nome_bairro(bairro_selecionado)
 
     mapa = folium.Map(
@@ -146,124 +230,131 @@ def construir_mapa_bairros_inct(
         control_scale=True,
     )
 
-    # Camada base principal: OpenStreetMap (ruas, quadras e pontos de referência sem API key)
     folium.TileLayer(
         tiles="https://tile.openstreetmap.org/{z}/{x}/{y}.png",
         attr="&copy; OpenStreetMap contributors",
         name="Ruas (OpenStreetMap)",
         max_zoom=19,
-        show=estilo_ruas_claro,
+        show=True,
     ).add_to(mapa)
 
-    # Camada base alternativa: Esri World Street Map (estilo cartográfico limpo, sem API key)
-    folium.TileLayer(
-        tiles="https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
-        attr="Tiles &copy; Esri",
-        name="Mapa Cartográfico (Esri)",
-        max_zoom=19,
-        show=not estilo_ruas_claro,
-    ).add_to(mapa)
-
-    gdf_nao_selecionados = gdf_bairros[
-        gdf_bairros["bairro_chave"] != chave_selecionada
-    ].copy()
-    gdf_selecionado = gdf_bairros[
-        gdf_bairros["bairro_chave"] == chave_selecionada
-    ].copy()
-
-    # Camada multicolorida para todos os bairros (deixando as ruas bem legíveis por baixo)
-    if not gdf_nao_selecionados.empty:
+    if not gdf_bairros.empty:
         folium.GeoJson(
-            gdf_nao_selecionados.__geo_interface__,
+            gdf_bairros.__geo_interface__,
             name="Bairros de Porto Alegre",
             style_function=lambda feature: {
-                "fillColor": feature["properties"].get("cor_bairro", "#76b7b2"),
-                "color": "#1f2937",
-                "weight": 1.3,
-                "fillOpacity": 0.24,
+                "fillColor": feature["properties"].get("cor_nivel", "#94a3b8"),
+                "color": "#1e293b",
+                "weight": 1.15,
+                "fillOpacity": min(
+                    0.78,
+                    0.22
+                    + (float(feature["properties"].get("percentual_afetado", 0.0)) / 100.0)
+                    * 0.54,
+                ),
             },
             highlight_function=lambda feature: {
-                "fillColor": feature["properties"].get("cor_bairro", "#f28e2b"),
+                "fillColor": feature["properties"].get("cor_nivel", "#94a3b8"),
                 "color": "#0f172a",
                 "weight": 2.4,
-                "fillOpacity": 0.42,
+                "fillOpacity": 0.82,
             },
             tooltip=folium.GeoJsonTooltip(
                 fields=[
                     "nome_exibicao",
-                    "populacao_total",
-                    "edificacoes_totais",
-                    "max_populacao_afetada",
-                    "max_percentual_afetado",
+                    "nivel_aplicado",
+                    "percentual_afetado",
+                    "edificacoes_afetadas",
+                    "populacao_afetada",
                 ],
                 aliases=[
                     "Bairro:",
-                    "População (2022):",
-                    "Total de edificações:",
-                    "Máx. pop. afetada:",
-                    "Máx. % afetado:",
+                    "Nível (m):",
+                    "Porcentagem de prédios afetados:",
+                    "Edif. afetadas:",
+                    "Pop. afetada (est.):",
                 ],
                 localize=True,
                 sticky=True,
             ),
         ).add_to(mapa)
 
-    # Camada destacada do bairro selecionado
+    gdf_selecionado = gdf_bairros[
+        gdf_bairros["bairro_chave"] == chave_selecionada
+    ].copy()
+
     if not gdf_selecionado.empty:
         folium.GeoJson(
             gdf_selecionado.__geo_interface__,
             name="Bairro selecionado",
             style_function=lambda _: {
-                "fillColor": "#2563eb",
-                "color": "#1e3a8a",
-                "weight": 3.0,
-                "fillOpacity": 0.36,
+                "fillColor": "transparent",
+                "color": "#0f172a",
+                "weight": 4.2,
+                "fillOpacity": 0.0,
             },
-            tooltip=folium.GeoJsonTooltip(
-                fields=[
-                    "nome_exibicao",
-                    "populacao_total",
-                    "edificacoes_totais",
-                    "max_populacao_afetada",
-                    "max_percentual_afetado",
-                ],
-                aliases=[
-                    "Bairro selecionado:",
-                    "População (2022):",
-                    "Total de edificações:",
-                    "Máx. pop. afetada:",
-                    "Máx. % afetado:",
-                ],
-                localize=True,
-                sticky=True,
-            ),
+            interactive=False,
         ).add_to(mapa)
 
         min_lon, min_lat, max_lon, max_lat = gdf_selecionado.total_bounds
         mapa.fit_bounds([[min_lat, min_lon], [max_lat, max_lon]], padding=(28, 28))
 
-    legenda_html = """
+    legenda_html = f"""
     <div style="
         position: fixed;
         bottom: 24px;
         right: 16px;
         z-index: 9999;
-        background: rgba(255, 255, 255, 0.95);
+        background: rgba(255, 255, 255, 0.96);
         color: #111827;
-        padding: 10px 12px;
+        padding: 9px 11px;
         border-radius: 6px;
         border: 1px solid #cbd5e1;
-        font-size: 12px;
-        line-height: 1.55;
+        font-size: 11px;
+        line-height: 1.35;
         box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     ">
-        <div style="font-weight: 700; margin-bottom: 4px;">Legenda do mapa</div>
-        <div><span style="display:inline-block;width:12px;height:12px;background:rgba(37,99,235,0.40);border:2px solid #1e3a8a;margin-right:6px;"></span>Área selecionada</div>
-        <div><span style="display:inline-block;width:12px;height:12px;background:rgba(118,183,178,0.40);border:1.5px solid #1f2937;margin-right:6px;"></span>Demarcação dos bairros (POA)</div>
-        <div style="color:#475569;font-size:11px;margin-top:2px;">Base viária: OpenStreetMap / Esri</div>
+        <div style="font-weight: 700; margin-bottom: 6px; font-size: 12px;">
+            Nível: {float(nivel_m):.1f} m
+        </div>
+        <div style="display: flex; align-items: center; margin-bottom: 8px;">
+            <span style="
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                background: transparent;
+                border: 3px solid #0f172a;
+                margin-right: 6px;
+                flex-shrink: 0;
+            "></span>
+            <span>Bairro selecionado</span>
+        </div>
+        <div style="display: flex; align-items: stretch; gap: 6px;">
+            <div style="
+                width: 12px;
+                height: 92px;
+                border-radius: 3px;
+                border: 1px solid #94a3b8;
+                background: {GRADIENTE_VERTICAL_CSS};
+                flex-shrink: 0;
+            "></div>
+            <div style="
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 92px;
+                font-size: 10px;
+                color: #334155;
+            ">
+                <span>100</span>
+                <span>75</span>
+                <span>50</span>
+                <span>25</span>
+                <span>0</span>
+            </div>
+        </div>
     </div>
     """
     mapa.get_root().html.add_child(folium.Element(legenda_html))
-    folium.LayerControl(position="topleft").add_to(mapa)
 
     return mapa
